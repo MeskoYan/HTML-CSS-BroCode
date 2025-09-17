@@ -1,7 +1,7 @@
 <h1>
 About this
 </h1>
-<p>![Static Badge](https://img.shields.io/badge/60%25-In%20progress-yellow)</p>
+<p>![alt text](https://img.shields.io/badge/60%25-In%20progress-yellow)</p>
 <p style="font-size:1.5em">
 This is my first repository trying to learn web development. 
 <br>
