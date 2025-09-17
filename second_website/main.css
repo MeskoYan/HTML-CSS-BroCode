@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+/* Container verde (a bandeira) */
+.verde {
+    position: relative;
+    background-color: #009c3b;
+    min-width: 100vw;
+    min-height: 100vh;
+    aspect-ratio: 10 / 7;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O losango amarelo */
+.losango {
+    position: absolute;
+    background-color: #ffdf00;
+    width: 80%;
+    height: 80%;
+    transform: rotate(45deg);
+
+    /* ✅ A CORREÇÃO PRINCIPAL ESTÁ AQUI ✅ */
+    /* Transformamos o losango em um container flex para centralizar o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O círculo azul */
+.circulo {
+    background-color: #002776;
+    
+    /* O cálculo do tamanho continua o mesmo */
+    width: 62.5%;
+    height: 62.5%;
+    border-radius: 50%;
+    
+    /* Como o círculo está dentro de um container girado (o losango),
+       precisamos 'desfazer' a rotação para que ele fique reto.
+    */
+    transform: rotate(-45deg); 
+}
