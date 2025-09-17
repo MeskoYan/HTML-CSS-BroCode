@@ -2,7 +2,7 @@
 About this
 </h1>
 <p>![alt text](https://img.shields.io/badge/60%25-In%20progress-yellow)</p>
-<p style="font-size:1.5em">
+<p>
 This is my first repository trying to learn web development. 
 <br>
 <br>
